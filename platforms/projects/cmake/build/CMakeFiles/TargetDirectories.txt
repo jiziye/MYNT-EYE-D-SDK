@@ -1,0 +1,3 @@
+/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/build/CMakeFiles/edit_cache.dir
+/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/build/CMakeFiles/mynteyed_demo.dir

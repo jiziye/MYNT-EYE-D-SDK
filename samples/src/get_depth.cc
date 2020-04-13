@@ -267,10 +267,11 @@ int main(int argc, char const* argv[]) {
     auto image_depth = cam.GetStreamData(ImageType::IMAGE_DEPTH);
     if (image_depth.img) {
       allow_count = true;
-      auto &&depth_raw = image_depth.img->To(ImageFormat::DEPTH_RAW);
-      auto &&depth_color =
+      auto depth_raw = image_depth.img->To(ImageFormat::DEPTH_RAW);
+      auto depth_color =
           colorize->Process(depth_raw, ImageFormat::DEPTH_BGR)->ToMat();
-
+     
+      //depth colorful image
       cv::setMouseCallback("depth", OnDepthMouseCallback, &depth_region);
       depth_region.DrawRect(depth_color);
       cv::imshow("depth", depth_color);
@@ -281,6 +282,16 @@ int main(int argc, char const* argv[]) {
           [](const ushort& elem) {
             return std::to_string(elem);
           }, 80, depth_info);
+
+
+      //depth gray image
+      auto depth_gray = colorize->Process(depth_raw,ImageFormat::DEPTH_GRAY_24)->ToMat();
+      cv::imshow("depth_gray",depth_gray);
+     
+      //depth raw data
+      cv::Mat depth;
+      depth = image_depth.img->ToMat();
+      cv::imshow("raw",depth);
     }
 
     if (allow_count == true) {

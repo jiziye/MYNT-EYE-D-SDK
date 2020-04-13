@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mynteyed_demo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\mynteyed\;CMake Files\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mynteyed_demo">
+				<Option output="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/mynteyed_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWITH_OPENCV"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 mynteyed_demo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mynteyed_demo/fast">
+				<Option output="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/mynteyed_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWITH_OPENCV"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 mynteyed_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/mynteyed_demo.cc">
+			<Option target="mynteyed_demo"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/lib/cmake/mynteyed/mynteyed-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\mynteyed\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/lib/cmake/mynteyed/mynteyed-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\mynteyed\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/lib/cmake/mynteyed/mynteyed-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\mynteyed\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/lib/cmake/mynteyed/mynteyed-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\lib\cmake\mynteyed\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/mynt/MYNT-EYE-D-SDK/platforms/projects/cmake/../../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

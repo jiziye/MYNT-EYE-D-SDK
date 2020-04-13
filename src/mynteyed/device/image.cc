@@ -18,6 +18,9 @@
 // #include "mynteyed/internal/image_utils.h"
 #include "mynteyed/util/log.h"
 
+
+
+
 MYNTEYE_USE_NAMESPACE
 
 namespace {
@@ -170,6 +173,7 @@ void Image::set_valid_size(std::size_t valid_size) {
 #ifdef WITH_OPENCV
 cv::Mat Image::ToMat() {
   return cv::Mat(height_, width_, get_mat_type(format_), data());
+  std::cout<< "use opencv ??????????????????????????????????????? "<< std::endl;
 }
 #endif
 

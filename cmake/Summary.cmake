@@ -86,7 +86,8 @@ status("  HOST_COMPILER: ${CMAKE_CXX_COMPILER_ID}")
 status("    COMPILER_VERSION: ${CMAKE_CXX_COMPILER_VERSION}")
 
 status("")
-status("OpenCV: " IF WITH_OPENCV "YES" ELSE "NO")
+status("OpenCV: ?????????????????????????????????????????//
+ ****************************" IF WITH_OPENCV "YES" ELSE "NO")
 if(WITH_OPENCV AND OpenCV_VERSION)
   status("  OpenCV_VERSION: ${OpenCV_VERSION}")
   status("  OpenCV_WORLD: " IF WITH_OPENCV_WORLD "YES" ELSE "NO")

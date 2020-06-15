@@ -110,6 +110,7 @@ Device::~Device() {
 
 void Device::Init() {
   int ret = EtronDI_Init(&handle_, false);
+  std::cout << "EtronDI_Init()***************" << std::endl;
   UNUSED(ret);
 
   stream_color_info_ptr_ =
@@ -148,7 +149,7 @@ void Device::GetDeviceInfos(std::vector<DeviceInfo>* dev_infos) {
   int count = 0;
   while (true) {
     if (num > 0 && num < 3) {
-      EtronDI_Release(&handle_);
+      //EtronDI_Release(&handle_);
       EtronDI_Init(&handle_, false);
       LOGI("\n");
     } else if (num >= 3) {
@@ -356,6 +357,7 @@ bool Device::SetAutoWhiteBalanceEnabled(bool enabled) {
   bool ok;
   if (enabled) {
     params_member_[ControlParams::AUTO_WHITE_BALANCE].enabled = enabled;
+
     ok = ETronDI_OK == EtronDI_EnableAWB(handle_, &dev_sel_info_);
   } else {
     ok = ETronDI_OK == EtronDI_DisableAWB(handle_, &dev_sel_info_);
@@ -1486,6 +1488,7 @@ void Device::GetCameraCalibrationWithStruct(char* DumpBuffer,
 
 void Device::Close() {
   if (dev_sel_info_.index != -1) {
+    std::cout << "close()**************" << std::endl;
     EtronDI_CloseDevice(handle_, &dev_sel_info_);
     is_device_opened_ = false;
     dev_sel_info_.index = -1;

@@ -3,6 +3,7 @@
 _build/
 _output/
 _install/
+dataset
 
 /docs/_doxygen/
 

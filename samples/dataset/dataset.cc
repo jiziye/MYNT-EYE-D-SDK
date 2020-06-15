@@ -84,8 +84,26 @@ void Dataset::SaveStreamData(const ImageType &type,
     ++count;
     std::stringstream ss;
     ss << writer->outdir << MYNTEYE_OS_SEP << std::dec
-       << std::setw(IMAGE_FILENAME_WIDTH) << std::setfill('0') << seq << ".png";
-    cv::imwrite(ss.str(), data.img->To(ImageFormat::COLOR_BGR)->ToMat());
+       << std::setw(IMAGE_FILENAME_WIDTH) << std::setfill('0') << count << ".png";
+    switch (type){
+        case ImageType::IMAGE_LEFT_COLOR :
+        {
+            cv::imwrite(ss.str(), data.img->To(ImageFormat::COLOR_BGR)->ToMat());
+        } break;
+
+        case ImageType::IMAGE_RIGHT_COLOR:
+        {
+            cv::imwrite(ss.str(), data.img->To(ImageFormat::COLOR_BGR)->ToMat());
+        } break;
+         case ImageType::IMAGE_DEPTH:
+        {
+            cv::imwrite(ss.str(), data.img->To(ImageFormat::DEPTH_RAW)->ToMat());
+        } break;
+        default:
+        std::cout << "Unsupported ImageType." << std::endl;
+  
+    }
+    
   }
 }
 
@@ -118,6 +136,9 @@ Dataset::writer_t Dataset::GetStreamWriter(const ImageType &type) {
       } break;
       case ImageType::IMAGE_RIGHT_COLOR: {
         writer->outdir = outdir_ + MYNTEYE_OS_SEP "right";
+      } break;
+      case ImageType::IMAGE_DEPTH: {
+        writer->outdir = outdir_ + MYNTEYE_OS_SEP "depth";
       } break;
       default:
         std::cout << "Unsupported ImageType." << std::endl;

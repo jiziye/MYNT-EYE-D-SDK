@@ -27,3 +27,12 @@ make_executable(record
   LINK_LIBS  mynteye_depth ${OpenCV_LIBS}
   DLL_SEARCH_PATHS ${MYNTEYE_DLL_SEARCH_PATHS}
 )
+
+
+
+##record_all
+make_executable(record_all
+  SRCS record_all.cc dataset.cc
+  LINK_LIBS  mynteye_depth ${OpenCV_LIBS}
+  DLL_SEARCH_PATHS ${MYNTEYE_DLL_SEARCH_PATHS}
+)

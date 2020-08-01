@@ -432,7 +432,7 @@ void CameraPrivate::ReadDeviceFlash() {
     return;
   }
 
-  LOGI("\nDevice descriptors:");
+  LOGI("\n camera_p.cc=> Device descriptors:");
   LOGI("  name: %s", descriptors_->name.c_str());
   LOGI("  serial_number: %s", descriptors_->serial_number.c_str());
   LOGI("  firmware_version: %s",

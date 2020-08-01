@@ -110,7 +110,7 @@ Device::~Device() {
 
 void Device::Init() {
   int ret = EtronDI_Init(&handle_, false);
-  std::cout << "EtronDI_Init()***************" << std::endl;
+  std::cout << "EtronDI_Init()**************" << std::endl;
   UNUSED(ret);
 
   stream_color_info_ptr_ =

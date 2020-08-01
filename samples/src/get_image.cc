@@ -74,7 +74,7 @@ int main(int argc, char const* argv[]) {
     // params.ir_depth_only = true;
 
     // Infrared intensity: 0(default), [0,10]
-    params.ir_intensity = 4;
+    params.ir_intensity = 0;
 
     // Colour depth image, default 5000. [0, 16384]
     params.colour_depth_value = 5000;

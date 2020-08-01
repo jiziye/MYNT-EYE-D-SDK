@@ -48,6 +48,7 @@ ErrorCode Camera::Open() {
   std::vector<DeviceInfo> dev_infos = GetDeviceInfos();
   if (dev_infos.size() <= 0) {
     LOGE("Error: Device not found");
+    LOGE("Camer::Open()**********");
     return ErrorCode::ERROR_CAMERA_OPEN_FAILED;
   }
   return Open(OpenParams(0));
